@@ -45,7 +45,7 @@
 1. プログラムを実行（上記の方法）
 2. `Ctrl+Shift+P`（Mac: `Cmd+Shift+P`）でコマンドパレット
 3. 「**simple browser**」と入力
-4. 「**Simple Browser: Show**」を選択  
+4. 「**Simple Browser: Show**」を選択
 5. `http://localhost:8080` と入力してEnter
 6. 右側にブラウザ画面が表示される
 
@@ -102,7 +102,7 @@ codespace-symmetrical-guacamole-q74vxx47qp92x7wv
 
 ### 停止のタイミング
 
-- ✅ **課題提出後（すぐに停止）**
+- ✅ **課c題提出後（すぐに停止）**
 - ✅ 30分以上離席する時
 - ✅ その日の作業を終える時
 - ✅ 他の授業に移る時
