@@ -1,14 +1,18 @@
-    package main
-    import (
-    "fmt"
-    "net/http"
-    )
-    func main() {
-    http.HandleFunc("/hello", hellohandler)
-    http.ListenAndServe(":8080", nil)
-    }
+package main
 
-    /* 以下，関数を追加 */
-    func hellohandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "こんにちは from Codespace !")
+import (
+	"fmt"
+	"net/http"
+)
+
+func main() {
+	http.HandleFunc("/hello", hellohandler)
+	if err := http.ListenAndServe(":8080", nil); err != nil {
+		fmt.Println("server error:", err)
 	}
+}
+
+/* 以下，関数を追加 */
+func hellohandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "こんにちは from Codespace !")
+}

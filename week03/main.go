@@ -10,7 +10,9 @@ func main() {
 	http.HandleFunc("/now", nowhandler)
 	http.HandleFunc("/dice", dicehandler)
 
-	http.ListenAndServe(":8080", nil)
+	if err := http.ListenAndServe(":8080", nil); err != nil {
+    fmt.Println("server error:", err)
+}
 }
 func hellohandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "こんにちは from Cocespace !")
